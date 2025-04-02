@@ -171,7 +171,7 @@ int main(int argc, char** argv)
 
 	image.flip_vertically();
 	zbuffer.flip_vertically();
-	image.write_tga_file("./output/output.tga");
+	image.write_tga_file("./output/output.png");
 	//zbuffer.write_tga_file("./output/zbuffer.tga");
 	return 0;
 }
