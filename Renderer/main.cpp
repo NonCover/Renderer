@@ -141,15 +141,14 @@ struct PhongShader : public IShader {
 
 int main(int argc, char** argv)
 {
-	model = new Model("./obj/robot.obj");
+	model = new Model("./obj/african/african_head.obj");
 
 	light_dir.normalize();
 	TGAImage image(WIDTH, HEIGHT, TGAImage::RGB);
 	TGAImage zbuffer(WIDTH, HEIGHT, TGAImage::GRAYSCALE);
 
 	// 实例化着色器
-	GouraudShader shader;
-
+	PhongShader shader;
 
 
 	lookat(eye, center, up);
