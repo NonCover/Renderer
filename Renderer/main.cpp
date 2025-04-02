@@ -148,7 +148,7 @@ int main(int argc, char** argv)
 	TGAImage zbuffer(WIDTH, HEIGHT, TGAImage::GRAYSCALE);
 
 	// 实例化着色器
-	PhongShader shader;
+	GouraudShader shader;
 
 	// MVP矩阵
 	lookat(eye, center, up);
