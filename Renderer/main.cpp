@@ -155,7 +155,6 @@ int main(int argc, char** argv)
 	projection(-1.f / (eye - center).norm());
 	viewport(WIDTH / 8, HEIGHT / 8, WIDTH * 3 / 4, HEIGHT * 3 / 4);
 
-
 	// 循环每一个面
 	for (int i = 0; i < model->nfaces(); i++)
 	{
@@ -173,7 +172,7 @@ int main(int argc, char** argv)
 	image.flip_vertically();
 	zbuffer.flip_vertically();
 	image.write_tga_file("./output/output.tga");
-	zbuffer.write_tga_file("./output/zbuffer.tga");
+	//zbuffer.write_tga_file("./output/zbuffer.tga");
 	return 0;
 }
 
