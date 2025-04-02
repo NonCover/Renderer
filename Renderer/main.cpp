@@ -150,7 +150,7 @@ int main(int argc, char** argv)
 	// 实例化着色器
 	PhongShader shader;
 
-
+	// MVP矩阵
 	lookat(eye, center, up);
 	projection(-1.f / (eye - center).norm());
 	viewport(WIDTH / 8, HEIGHT / 8, WIDTH * 3 / 4, HEIGHT * 3 / 4);
