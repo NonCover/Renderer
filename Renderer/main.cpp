@@ -143,6 +143,7 @@ int main(int argc, char** argv)
 {
 	model = new Model("./obj/african/african_head.obj");
 
+
 	light_dir.normalize();
 	TGAImage image(WIDTH, HEIGHT, TGAImage::RGB);
 	TGAImage zbuffer(WIDTH, HEIGHT, TGAImage::GRAYSCALE);
